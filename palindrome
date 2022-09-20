@@ -1,0 +1,37 @@
+#include<stdio.h>
+int main()
+{
+    char a[100];
+    int i=0,flag=0;
+    printf("Enter the word ");
+    scanf("%s",&a);
+   char p=&a[0];
+   charq=&a[0];
+
+
+    while (p!='\0')
+    {
+        i++;
+        p++;
+    }
+    p--;
+    printf("%d",i);
+    while(q<=p)
+    {
+        if(q==*p)
+        {
+            q++;
+            p--;
+            flag=1;
+        }
+    }
+    if(flag==0)
+    {
+        printf("Is not a palindrome");
+    }
+     else
+    {
+        printf("Is a palindrome");
+    }
+    return 0;
+}
